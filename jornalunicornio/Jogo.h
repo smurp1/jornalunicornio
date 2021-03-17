@@ -8,7 +8,6 @@ public:
 	~Jogo();
 
 	jornal jornal1;
-	Sprite s;
 	void inicializar();
 	void finalizar();
 	void executar();

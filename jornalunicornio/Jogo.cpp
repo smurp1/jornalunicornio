@@ -20,9 +20,8 @@ void Jogo::inicializar()
 	{
 		gRecursos.carregarSpriteSheet("jogo", "../assets/assets/JornalTemplate.png");
 	}
-	s.setSpriteSheet("jogo");
-	//jornal1.inicializarsprite();
-	//jornal1.inicializardados();
+	jornal1.inicializarsprite();
+	jornal1.inicializardados();
 }
 
 void Jogo::finalizar()
@@ -37,9 +36,8 @@ void Jogo::executar()
 	while(!gTeclado.soltou[TECLA_ESC] && !gEventos.sair)
 	{
 		uniIniciarFrame();
-		s.desenhar(111, 111);
-		//jornal1.desenharjornal();
-		//jornal1.desenharmateria();
+		jornal1.desenharjornal();
+		jornal1.desenharmateria();
 
 		uniTerminarFrame();
 	}
